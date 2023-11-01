@@ -30,7 +30,7 @@ pub async fn book_by_id(connection_pool: &SqlitePool, id: i32) -> Result<Book> {
     )
 } 
 
-pub async fn add_books<S: ToString>(
+pub async fn add_book<S: ToString>(
     connection_pool: &SqlitePool,
     title: S,
     author: S
