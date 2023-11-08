@@ -14,9 +14,6 @@ pub fn books_service() -> Router {
         .route("/delete/:id", delete(delete_book))
 }
 
-async fn call_me_daddy() {
-
-}
 
 async fn get_all_books(
     Extension(connect): Extension<SqlitePool>

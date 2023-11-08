@@ -1,7 +1,6 @@
 use serde::{Serialize, Deserialize};
 use sqlx::{FromRow, Row, SqlitePool};
 use anyhow::{Result, Ok};
-use tokio::sync::{RwLock, Mutex};
 
 #[derive(Debug, Serialize, Deserialize, FromRow)]
 pub struct Book {
